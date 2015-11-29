@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <TextView
+        android:id="@+id/basket_total"
+        style="@style/TextViewBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/total" />
+
+    <TextView
+        android:id="@+id/updated_time"
+        style="@style/TextViewBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/basket_total"
+        android:layout_marginTop="8dp"
+        android:text="@string/updated_at" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/currency_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/updated_time" />
+
+</RelativeLayout>

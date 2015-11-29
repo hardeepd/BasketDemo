@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <uk.co.hd_tech.basketdemo.ui.widget.QuantitySelectorView
+        android:id="@+id/quantity_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@id/quantity_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/TextViewSubhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peas" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_price"
+                style="@style/TextViewBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="£1.98"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/TextViewBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" per " />
+
+            <TextView
+                android:id="@+id/item_quantity"
+                style="@style/TextViewBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bag" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#1F000000" />
+
+</RelativeLayout>

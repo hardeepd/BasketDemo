@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Basket Demo</string>
+    <string name="title_activity_basket">Basket</string>
+    <string name="splash_screen_text">"Basket Demo"</string>
+
+    <string name="total">Total: -</string>
+    <string name="updated_at">Updated at -</string>
+
+    <string name="unit_pack">Pack</string>
+    <string name="unit_bag">Bag</string>
+    <string name="unit_dozen">Dozen</string>
+    <string name="unit_bottle">Bottle</string>
+    <string name="unit_can">Can</string>
+</resources>
